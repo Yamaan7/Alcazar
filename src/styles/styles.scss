@@ -1,0 +1,872 @@
+.custom-menu.ant-menu-horizontal {
+    border-bottom: none;
+}
+
+.custom-menu.ant-menu-horizontal>.ant-menu-item,
+.custom-menu.ant-menu-horizontal>.ant-menu-submenu {
+    padding-bottom: 16px;
+    /* Adjust this value as needed */
+}
+
+.custom-menu.ant-menu-horizontal>.ant-menu-item::after,
+.custom-menu.ant-menu-horizontal>.ant-menu-submenu::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 15%;
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    background-color: transparent;
+    transform: translateX(-50%);
+    transition: background-color 0.3s ease;
+}
+
+.custom-menu.ant-menu-horizontal>.ant-menu-item:hover::after,
+.custom-menu.ant-menu-horizontal>.ant-menu-submenu:hover::after,
+.custom-menu.ant-menu-horizontal>.ant-menu-item-selected::after,
+.custom-menu.ant-menu-horizontal>.ant-menu-submenu-selected::after {
+    background-color: #FFE61B;
+}
+
+.custom-menu.ant-menu-horizontal>.ant-menu-item-selected,
+.custom-menu.ant-menu-horizontal>.ant-menu-item:hover,
+.custom-menu.ant-menu-horizontal>.ant-menu-submenu:hover,
+.custom-menu.ant-menu-horizontal>.ant-menu-submenu-selected {
+    color: #FFE61B;
+    border-bottom: none;
+}
+
+.custom-menu {
+    color: #E6FDC8;
+    font-weight: 400px;
+}
+
+.custom-menu:hover {
+    font-weight: 400px;
+}
+
+.custom-menu:active {
+    font-weight: 600px;
+}
+
+// .arrow:hover {
+//     filter: invert(100%);
+//   }  
+
+/* styles.css */
+
+.custom-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    // transform: scaleX(-1);
+    background-color: transparent;
+    border-radius: 100px;
+    /* Remove default button border */
+    cursor: pointer;
+    /* Change cursor on hover */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-button:hover {
+    background-color: yellow;
+}
+
+.custom-button img {
+    transition: filter 0.3s ease;
+    /* Smooth transition for the filter effect */
+}
+
+.custom-button:hover img {
+    filter: brightness(0);
+    /* This turns the image black */
+}
+
+// .minus:hover {
+//     background-color: red;
+// }
+
+.minus:hover img {
+    filter: brightness(0);
+    /* This turns the image black */
+}
+
+.plus:hover img {
+    filter: brightness(0);
+    /* This turns the image black */
+}
+
+
+
+
+
+
+
+
+.headerRow {
+    width: auto;
+    height: 680px;
+    margin: 15px;
+
+    @media (max-width: 768px) {
+        max-width: 735px;
+        height: 832px;
+        align-items: center;
+    }
+
+    @media (max-width: 415px) {
+        max-width: 384px;
+        height: 715px;
+        align-items: center;
+    }
+}
+
+.headerTitle {
+    margin-top: 115px;
+    margin-left: 57px;
+    font-size: 100px;
+    line-height: 120px;
+
+    @media (max-width: 768px) {
+        margin-top: 23px;
+        margin-left: 42px;
+    }
+
+    @media (max-width: 415px) {
+        margin-top: 25px;
+        margin-left: 40px;
+        font-size: 50px;
+        line-height: 75px;
+    }
+}
+
+.headerTitle2 {
+    margin-left: 65px;
+    margin-top: 14px;
+    font-size: 24px;
+    line-height: 36px;
+    width: 472px;
+
+    @media (max-width: 768px) {
+        margin-left: 45px;
+        margin-top: 14px;
+    }
+
+    @media (max-width: 415px) {
+        margin-left: 40px;
+        margin-top: 2px;
+        font-size: 20px;
+        line-height: 30px;
+        width: 297px;
+    }
+}
+
+.headerButton {
+    margin-top: 34px;
+    margin-left: 60px;
+    width: 194px;
+    height: 68px;
+
+    @media (max-width: 768px) {
+        margin-top: 34px;
+        margin-left: 42px;
+    }
+
+    @media (max-width: 415px) {
+        margin-top: 20px;
+        margin-left: 40px;
+        width: 304px;
+        height: 60px;
+    }
+}
+
+.headerLion {
+    width: 346px;
+    height: 640px;
+    right: 150px;
+    top: 170px;
+
+    @media (max-width: 768px) {
+        width: 300px;
+        height: 525px;
+        right: 65px;
+        top: 416px;
+    }
+
+    @media (max-width: 415px) {
+        width: 222px;
+        height: 385px;
+        right: 85px;
+        top: 440px;
+    }
+}
+
+.headerLight {
+    width: 712px;
+    height: 576px;
+
+    @media (max-width: 768px) {
+        width: 436px;
+        height: 410px;
+        top: 0px;
+        left: 251px;
+    }
+
+    @media (max-width: 415px) {
+        width: 379px;
+        height: 347px;
+        top: 25px;
+        left: 50px;
+    }
+}
+
+.cornerCoin {
+    top: 674px;
+    left: 16px;
+
+    @media (max-width: 768px) {
+        top: 804px;
+        left: 17px;
+    }
+
+    @media (max-width: 415px) {
+        display: none;
+    }
+}
+
+.coin1 {
+    top: 200px;
+    right: 525px;
+
+    @media (max-width: 768px) {
+        top: 700px;
+        right: 450px;
+    }
+
+    @media (max-width: 415px) {
+        top: 590px;
+        right: 50px;
+        width: 43px;
+        height: 43px;
+    }
+}
+
+.coin3 {
+    top: 585px;
+    right: 800px;
+
+    @media (max-width: 768px) {
+        top: 615px;
+        right: 430px;
+        width: 39px;
+        height: 39px;
+    }
+
+    @media (max-width: 415px) {
+        top: 550px;
+        right: 305px;
+        width: 43px;
+        height: 43px;
+    }
+}
+
+.blurredCoin {
+    top: 190px;
+    right: 625px;
+
+    @media (max-width: 768px) {
+        top: 685px;
+        right: 550px;
+    }
+
+    @media (max-width: 415px) {
+        top: 580px;
+        right: 35px;
+        width: 19px;
+        height: 19px;
+        transform: rotate(270deg);
+    }
+}
+
+.topCoin {
+    top: 128px;
+    right: 1315px;
+
+    @media (max-width: 768px) {
+        top: 685px;
+        right: 550px;
+        display: none;
+    }
+
+    @media (max-width: 415px) {
+        top: 475px;
+        right: 50px;
+        width: 26px;
+        height: 26px;
+        transform: rotate(180deg);
+    }
+}
+
+.rocket {
+    top: 93px;
+    right: -27px;
+
+    @media (max-width: 768px) {
+        top: 100px;
+        right: 0px;
+        width: 141px;
+        height: 124px;
+    }
+
+    @media (max-width: 415px) {
+        top: 105px;
+        right: 5px;
+        width: 64px;
+        height: 62px;
+    }
+}
+
+.cornerCoin {
+    top: 674px;
+    left: 16px;
+
+    @media (max-width: 768px) {
+        top: 804px;
+        left: 17px;
+    }
+
+    @media (max-width: 415px) {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.howToMainRow {
+    padding: 45px;
+
+    @media (max-width: 768px) {
+        padding: 29px;
+    }
+}
+
+.HowToTitle {
+    font-size: 100px;
+    line-height: 120px;
+
+    @media (max-width: 768px) {
+        width: 550px;
+    }
+
+    @media (max-width: 415px) {
+        font-size: 50px;
+        line-height: 75px;
+    }
+}
+
+.HowToTitle br {
+    display: none;
+
+    @media (max-width: 768px) {
+        display: flex;
+    }
+}
+
+.HowToTitle2 {
+    width: 675px;
+
+    @media (max-width: 768px) {
+        width: 675px;
+    }
+
+    @media (max-width: 415px) {
+        width: 354px;
+    }
+}
+
+.cardRow {
+    justify-content: space-between;
+    gap: 24px;
+
+    @media (max-width: 768px) {
+        justify-content: left;
+        gap: 19px;
+    }
+
+    @media (max-width: 415px) {
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+.cardDescription {
+    width: 584px;
+
+    @media (max-width: 768px) {
+        width: 703px;
+    }
+
+    @media (max-width: 415px) {
+        width: 351px;
+    }
+}
+
+.cardDescription2 {
+    width: 584px;
+
+    @media (max-width: 768px) {
+        width: 706px;
+    }
+
+    @media (max-width: 415px) {
+        width: 352px;
+    }
+}
+
+.roadmapRow {
+    padding: 45px;
+
+    @media (max-width: 768px) {
+        padding: 32px;
+    }
+
+    @media (max-width: 415px) {
+        padding: 15px;
+    }
+}
+
+.roadmapTitle {
+    margin-bottom: 59px;
+    font-size: 100px;
+    line-height: 120px;
+
+    @media (max-width: 768px) {
+        margin-bottom: 50px;
+    }
+
+    @media (max-width: 415px) {
+        font-size: 50px;
+        line-height: 75px;
+        margin-bottom: 30px;
+    }
+}
+
+.componentsRow {
+    padding: 15px;
+
+    @media (max-width: 768px) {
+        width: 704px;
+        height: 423px;
+        padding: 0%;
+    }
+
+    @media (max-width: 415px) {
+        max-width: 380px;
+        width: 100%;
+        height: 350px;
+        padding: 0%;
+    }
+}
+
+// ------------------------------------------- Cards ----------------------------------------------------
+.card1 {
+    width: 214px;
+    height: 63px;
+
+    @media (max-width: 768px) {
+        width: 193px;
+        height: 49px;
+    }
+
+    @media (max-width: 415px) {
+        width: 173px;
+        height: 37px;
+    }
+}
+
+.card2 {
+    width: 233px;
+    height: 63px;
+
+    @media (max-width: 768px) {
+        width: 212px;
+        height: 49px;
+    }
+
+    @media (max-width: 415px) {
+        width: 173px;
+        height: 37px;
+    }
+}
+
+.card3 {
+    width: 293px;
+    height: 63px;
+
+    @media (max-width: 768px) {
+        width: 275px;
+        height: 49px;
+        flex-direction: column;
+    }
+
+    @media (max-width: 415px) {
+        width: 354px;
+        height: 37px;
+    }
+}
+
+.card4 {
+    width: 385px;
+    height: 63px;
+
+    @media (max-width: 768px) {
+        width: 200px;
+        height: 49px;
+    }
+
+    @media (max-width: 415px) {
+        width: 354px;
+        height: 37px;
+    }
+}
+
+.card5 {
+    width: 366px;
+    height: 63px;
+
+    @media (max-width: 768px) {
+        width: 325px;
+        height: 49px;
+    }
+
+    @media (max-width: 415px) {
+        width: 354px;
+        height: 37px;
+    }
+}
+
+.card6 {
+    width: 299px;
+    height: 63px;
+
+    @media (max-width: 768px) {
+        width: 275px;
+        height: 49px;
+    }
+
+    @media (max-width: 415px) {
+        width: 354px;
+        height: 37px;
+    }
+}
+
+.card7 {
+    width: 452px;
+    height: 63px;
+
+    @media (max-width: 768px) {
+        width: 350px;
+        height: 49px;
+    }
+
+    @media (max-width: 415px) {
+        width: 354px;
+        height: 37px;
+    }
+}
+
+.card8 {
+    width: 531px;
+    height: 63px;
+
+    @media (max-width: 768px) {
+        width: 193px;
+        height: 49px;
+        display: none;
+    }
+}
+
+.Partnerships {
+    width: 219px;
+    height: 63px;
+
+    @media (max-width: 768px) {
+        width: 193px;
+        height: 49px;
+    }
+
+    @media (max-width: 415px) {
+        width: 354px;
+        height: 37px;
+    }
+}
+
+.columnCards {
+    gap: 11px;
+}
+
+.cardIcon {
+    width: 47px;
+    height: 47px;
+
+    @media (max-width: 768px) {
+        width: 33px;
+        height: 33px;
+    }
+
+    @media (max-width: 415px) {
+        width: 23px;
+        height: 23px;
+    }
+}
+
+.columnCards .cardIcon {
+    @media (max-width: 768px) {
+        opacity: 0;
+    }
+
+    @media (max-width: 415px) {
+        opacity: 1;
+    }
+
+}
+
+.rocketContainer {
+    // justify-content: end;
+    // align-items: center;
+    position: absolute;
+    left: 950px;
+
+    @media (max-width: 768px) {
+        left: 400px;
+        top: 90px;
+    }
+
+    @media (max-width: 415px) {
+        left: 235px;
+        top: -134px;
+    }
+}
+
+.bigRocket {
+    width: 347px;
+    height: 423px;
+
+    @media (max-width: 768px) {
+        width: 293px;
+        height: 357px;
+        transform: rotate(-25deg);
+    }
+
+    @media (max-width: 415px) {
+        width: 120px;
+        height: 145px;
+        transform: rotate(0deg);
+    }
+}
+
+.iconText {
+    font-size: 20px;
+    line-height: 33px;
+
+    @media (max-width: 768px) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    @media (max-width: 415px) {
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+
+.circleImage {
+    @media (max-width: 415px) {
+        width: 384px;
+        height: 119px;
+    }
+}
+
+// --------------------------------------------------- FAQ Section -----------------------------------------------------------
+
+.FAQrow {
+
+    @media (max-width: 768px) {
+        padding: 32px;
+    }
+
+    @media (max-width: 415px) {
+        padding: 15px;
+    }
+}
+
+.computer {
+    width: 513px;
+    height: 321.703px;
+
+    @media (max-width: 768px) {
+        position: absolute;
+        left: 35px;
+        bottom: 100px;
+        width: 704px;
+        height: 440.593px;
+    }
+
+    @media (max-width: 415px) {
+        left: 15px;
+        bottom: 0px;
+        width: 385px;
+        height: 241.777px;
+    }
+}
+
+.expandedComponent {
+    padding-bottom: 15%;
+
+    @media (max-width: 768px) {
+        justify-content: left;
+        align-items: center;
+        padding-bottom: 591px;
+        margin: 0;
+    }
+
+    @media (max-width: 415px) {
+        padding-bottom: 300px;
+    }
+}
+
+// ----------------------------------------------------------- Footer ---------------------------------------------------------------------
+
+.pointAddress {
+    position: fixed;
+
+    @media (max-width: 768px) {
+        position: absolute;
+        left: 335px;
+        top: 20px;
+        width: 110%;
+    }
+
+    @media (max-width: 415px) {
+        position: absolute;
+        left: 20px;
+        top: 360px;
+        width: 110%;
+    }
+}
+
+.socialIcons {
+    @media (max-width: 768px) {
+        position: absolute;
+        left: 340px;
+        top: 100px;
+        flex-direction: row;
+        gap: 32px;
+        width: 110%;
+    }
+
+    @media (max-width: 415px) {
+        position: absolute;
+        left: 0px;
+        top: 440px;
+        flex-direction: row;
+        gap: 32px;
+        width: 110%;
+    }
+}
+
+.socialIcons img {
+    @media (max-width: 768px) {
+        width: 48px;
+        height: 48px;
+    }
+
+    @media (max-width: 415px) {}
+}
+
+.emailSection {
+    @media (max-width: 768px) {
+        position: absolute;
+        left: 400px;
+        bottom: 150px;
+    }
+
+    @media (max-width: 415px) {
+        position: absolute;
+        left: 50px;
+        bottom: 300px;
+    }
+}
+
+.footerBack {
+    padding-bottom: 31px;
+
+    @media (max-width: 768px) {
+        padding-bottom: 150px;
+    }
+
+    @media (max-width: 415px) {}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slider-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.blur-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+    /* Adjust this to control the width of the blur */
+    // background: rgba(255, 255, 255, 0.1);
+    /* Very light white background */
+    backdrop-filter: blur(5px);
+    // -webkit-backdrop-filter: blur(5px);
+    /* For Safari */
+    // z-index: 1;
+}
