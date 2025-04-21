@@ -145,7 +145,7 @@ const SignupForm: React.FC = () => {
                         marginTop: '10px',
                     }}
                 >
-                    <Link to="/" style={{ color: 'inherit' }}>
+                    <Link to="/main" style={{ color: 'inherit' }}>
                         Continue as Guest
                     </Link>
                 </Button>
