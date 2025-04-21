@@ -42,6 +42,7 @@ function App() {
       <Route path="/forgot-password-step2" element={<ForgotStep2 />} />
       <Route path="/forgot-password-step3" element={<ForgotStep3 />} />
       <Route path="*" element={<LogInForm updateAuthStatus={updateAuthStatus} />} />
+      <Route path="/main" element={<MainPage />} />
     </Routes>
   );
 
